@@ -12,9 +12,9 @@
   soy el texto del segundo componente 
  </x-Card>
 
-<x-Alert tipo="success"> verde  </x-Alert>
-<x-Alert tipo="primary"> azul  </x-Alert>
-<x-Alert tipo="danger"> rojo  </x-Alert>
+<x-Alert tipo="success">verde</x-Alert>
+<x-Alert tipo="primary">azul</x-Alert>
+<x-Alert tipo="danger">rojo</x-Alert>
 
 @endsection           
       
