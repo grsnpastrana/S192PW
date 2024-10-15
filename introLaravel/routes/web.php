@@ -7,6 +7,8 @@ Route::get('/', [controladorVistas::class, 'home'])->name('rutainicio');
 Route::get('/form', [controladorVistas::class, 'formulario'])->name('rutaform');
 Route::get('/clientes', [controladorVistas::class, 'consultas'])->name('rutaclientes');
 Route::view('/component', [controladorVistas::class, 'componentes'])->name('rutacomponentes');
+Route::post('/enviarCliente', [controladorVistas::class, 'procesarCliente'])->name('rutaEnviar');
+
 
 //ruta tipo get
 /* Route::get('/', function () {
