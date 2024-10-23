@@ -22,6 +22,16 @@ class controladorVistas extends Controller
     }
 
     public function procesarCliente(Request $peticion) {
+
+
+        $validate=$peticion->validate([ 
+            'txtnombre'=>'required|min:5|max:255',
+            'txtapellido'=>'required',
+            'txtcorreo'=>'required|email:rfc,dns',
+            'txttelefono'=>'required|numeric',
+            
+        ]);
+
         
         $ususario= $peticion->input('txtnombre');
 
