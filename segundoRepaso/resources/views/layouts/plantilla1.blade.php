@@ -23,6 +23,15 @@
 </nav>
 
 @yield('contenido')
+<div class="card mt-5 col-md-6">
+
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Copyright © 2024 bibliotecas gandhi </h5>
+    <p class="card-text">31 de noviembre del 2024 | Powered by gerson pastrana</p>
+  </div>
+</div>
+
 
 
 </body>
