@@ -47,7 +47,7 @@ En sus distintas categorías y géneros los premios 2024 reconocen 25 ganadores 
         document.addEventListener('DOMContentLoaded', function() {
             Swal.fire({
                 icon: 'success',
-                title: '¡Éxito!',
+                title: 'Todo correcto',
                 text: "{{ session('exito') }}",
                 confirmButtonText: 'OK'
             });

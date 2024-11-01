@@ -14,15 +14,15 @@ class vistasController extends Controller
             'txtisbn'=>'required|numeric|digits:13',
             'txttitulo'=>'required|string|max:150',
             'txtpaginas'=>'required|integer|min:1',
-            'txtaño'=>'required|integer|digits:4|min:1000|max:' . date('Y'),
-            'txtemail'=>'required|email',
+            'txtaño'=>'required',
+            'txtemail'=>'required',
             
         ]);
 
         
-        $ususario= $peticion->input('txtitulo');
+        $ususario= $peticion->input('txttitulo');
 
-        session()->flash('exito','se guardó el usuario '. $ususario);
+        session()->flash('exito','se guardó el libro '. $ususario);
         return to_route('rutainicio');
 
       
