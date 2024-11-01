@@ -42,6 +42,18 @@
 
 En sus distintas categorías y géneros los premios 2024 reconocen 25 ganadores y 22 menciones, entregando más de 180 millones de pesos a autoras y autores, destacando además un segundo lugar que se entregan en los cinco géneros del premio Mejores Obras Literarias.</div>
     </div>
+    @if(session('exito'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                icon: 'success',
+                title: '¡Éxito!',
+                text: "{{ session('exito') }}",
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+@endif
 
 </body>
 
