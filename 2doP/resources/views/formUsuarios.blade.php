@@ -47,6 +47,22 @@
         });
     </script>
     @endif
+    @if($errors->any())
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error en el registro',
+            html: `
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            `,
+            confirmButtonText: 'Reintentar'
+        });
+    </script>
+    @endif
 
 </body>
 </html>
