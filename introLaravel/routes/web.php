@@ -5,7 +5,7 @@ use App\Http\Controllers\controladorVistas;
 use App\Http\Controllers\clienteController;
 
 Route::get('/', [controladorVistas::class, 'home'])->name('rutainicio');
-/* Route::get('/form', [controladorVistas::class, 'formulario'])->name('rutaform'); */
+Route::get('/form', [controladorVistas::class, 'formulario'])->name('rutaform'); 
 Route::get('/clientes', [controladorVistas::class, 'consultas'])->name('rutaclientes');
 Route::view('/component', [controladorVistas::class, 'componentes'])->name('rutacomponentes');
 Route::post('/enviarCliente', [controladorVistas::class, 'procesarCliente'])->name('rutaEnviar');
@@ -15,6 +15,16 @@ route::get('/cliente/create',[clienteController::class, 'create'])->name('rutafo
 
 // ruta para el store 
 Route::post('/cliente', [clienteController::class, 'store'])->name('enviaCliente');
+
+//nueva ruta para clienteController para el index 
+Route::get('/clientes', [clienteController::class, 'index'])->name('rutaclientes');
+
+
+
+
+
+
+
 
 
 //ruta tipo get

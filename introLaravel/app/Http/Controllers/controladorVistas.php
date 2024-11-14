@@ -18,7 +18,7 @@ class controladorVistas extends Controller
     } */
 
     public function consultas() {
-        return view('clientes');
+        /* return view('clientes'); */
 
     }
 
