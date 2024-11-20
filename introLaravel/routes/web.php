@@ -26,6 +26,10 @@ Route::get('/cliente/{id}/edit', [clienteController::class, 'edit'])->name('ruta
 // actualizar los datos
 Route::put('/cliente/{id}', [clienteController::class, 'update'])->name('rutaActualizar');
 
+// ruta eliminar 
+Route::delete('/cliente/{id}', [clienteController::class, 'destroy'])->name('rutaEliminar');
+
+
 
 
 
