@@ -19,6 +19,14 @@ Route::post('/cliente', [clienteController::class, 'store'])->name('enviaCliente
 //nueva ruta para clienteController para el index 
 Route::get('/clientes', [clienteController::class, 'index'])->name('rutaclientes');
 
+//nuevas rutas 
+// formulario de edición
+Route::get('/cliente/{id}/edit', [clienteController::class, 'edit'])->name('rutaEditar');
+
+// actualizar los datos
+Route::put('/cliente/{id}', [clienteController::class, 'update'])->name('rutaActualizar');
+
+
 
 
 
